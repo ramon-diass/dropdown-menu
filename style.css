@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    background: #8c52ff;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    background: #8c52ff;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: #6d30e9;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
